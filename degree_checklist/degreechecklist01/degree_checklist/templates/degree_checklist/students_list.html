@@ -1,0 +1,19 @@
+<h1>Students</h1>
+<table>
+    <thead>
+        <tr>
+            <th><a href="?order_by=first_name">First Name</a></th>
+            <th><a href="?order_by=last_name">Last Name</a></th>
+            <th><a href="?order_by=user">Username</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.first_name }}</td>
+            <td>{{ student.last_name }}</td>
+            <td>{{ student.user }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
