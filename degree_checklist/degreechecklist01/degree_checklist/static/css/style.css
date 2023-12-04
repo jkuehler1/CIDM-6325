@@ -1,0 +1,68 @@
+/* Apply a global font style */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style the h1 header */
+h1 {
+    color: #333;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    /* Make table take the full width of the container */
+    border-collapse: collapse;
+    /* Collapse borders */
+}
+
+/* Style the table header */
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+    /* Add a hover effect for table rows */
+}
+
+/* Style the table cells */
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Style the anchor tags in table header for sorting */
+th a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the 'Add New Course' link */
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Add hover effect for 'Add New Course' link */
+a:hover {
+    background-color: #4cae4c;
+}

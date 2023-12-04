@@ -1,0 +1,40 @@
+{% load static %}
+{% load custom_filters %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <!-- Reference to static CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<h1>Courses</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th><a href="?sort=code">Code</a></th>
+            <th><a href="?sort=name">Name</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for course in courses %}
+        <tr>
+            <td>{{ course.code }}</td>
+            
+            <td>{{ course.name|uppercase }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url 'add_course' %}">Add New Course</a>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
